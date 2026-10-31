@@ -1,7 +1,12 @@
-.DS_Store
-Thumbs.db
-*.log
-node_modules/
-.env
 *.key
+*.log
 *.pem
+*.pyc
+.DS_Store
+.env
+.env.*
+.venv/
+Thumbs.db
+__pycache__/
+dist/*.tmp
+node_modules/
