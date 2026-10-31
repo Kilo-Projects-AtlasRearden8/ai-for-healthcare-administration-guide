@@ -1,0 +1,24 @@
+/* Print-specific tweaks for the AI for Healthcare Administration site */
+@media print {
+  body { background: #fff; color: #111; font-size: 11pt; }
+  header.site-header, nav, .no-print { display: none !important; }
+  main {
+    box-shadow: none;
+    margin: 0;
+    padding: 1.5cm 1.8cm;
+    background: #fff;
+    border: none;
+  }
+  section { margin-bottom: 1.6rem; page-break-inside: avoid; }
+  h1 { font-size: 1.6rem; page-break-after: avoid; }
+  h2 { font-size: 1.2rem; page-break-after: avoid; border-bottom: 1px solid #666; }
+  h3 { page-break-after: avoid; }
+  ul, ol { page-break-inside: avoid; }
+  .callout { border-left: 3px solid #7f1d1d; background: #fdf3f3; page-break-inside: avoid; }
+  table { page-break-inside: auto; }
+  tr { page-break-inside: avoid; }
+  a { color: #111; text-decoration: none; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.75rem; color: #666; }
+  footer { margin-top: 2rem; font-size: 8pt; color: #444; border-top: 1px solid #999; }
+  .chip { display: none; }
+}

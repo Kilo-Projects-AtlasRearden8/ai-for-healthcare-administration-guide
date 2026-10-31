@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Billing Basics — AI for Healthcare Administration</title>
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span> AI for Healthcare Administration</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="forms.html">Forms</a>
+      <a href="scheduling.html">Scheduling</a>
+      <a href="billing.html" style="color:var(--accent); font-weight:600;">Billing Basics</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="documentation.html">Documentation</a>
+      <a href="checklists.html">Checklists</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section>
+<h1>04 Billing Basics</h1>
+<p class="callout"><b>Education only.</b> This chapter explains concepts in plain language &mdash; it is not medical billing or coding advice. Always confirm billing steps with your clinic&rsquo;s billing manager or a certified medical coder before changing any workflow.</p>
+
+<h2>What AI can help with (administrative side only)</h2>
+<ul>
+<li>Drafting patient-friendly explanations of bills and statements</li>
+<li>Writing plain-language superbill templates (for your coder to complete)</li>
+<li>Drafting payment-plan letters and collection-friendly reminders</li>
+<li>Summarizing payer explanation of benefits (EOB) documents &mdash; with fake data only, never real patient EOBs</li>
+<li>Creating a billing glossary for front-desk staff</li>
+</ul>
+
+<h2>What AI should NOT do</h2>
+<ul>
+<li>Do not let AI assign CPT, HCPCS, or ICD-10 codes. Coding requires training and certification.</li>
+<li>Do not let AI decide whether a claim should be paid or denied.</li>
+<li>Do not paste real claims, remittance advices, or patient billing details into an AI tool.</li>
+<li>Do not submit claims based on AI output.</li>
+</ul>
+
+<h2>Key billing concepts (education only)</h2>
+<table>
+<thead>
+<tr><th>Term</th><th>Plain-English meaning</th></tr>
+</thead>
+<tbody>
+<tr><td>Superbill</td><td>A form a provider fills out listing services and diagnoses; used by the patient or biller to create a claim</td></tr>
+<tr><td>CPT code</td><td>A number describing a medical service or procedure (maintained by the AMA)</td></tr>
+<tr><td>ICD-10-CM code</td><td>A number describing a diagnosis or reason for the visit</td></tr>
+<tr><td>HCPCS code</td><td>A code for supplies, equipment, and some services (Medicare uses these heavily)</td></tr>
+<tr><td>Claim</td><td>The bill sent to an insurance payer for services</td></tr>
+<tr><td>EOB</td><td>Explanation of Benefits &mdash; the payer&rsquo;s statement showing what was paid, denied, or applied to deductible</td></tr>
+<tr><td>Remittance advice</td><td>The payer&rsquo;s payment detail that accompanies claim payment</td></tr>
+<tr><td>Deductible / copay / coinsurance</td><td>Amounts the patient owes before or alongside insurance payment</td></tr>
+</tbody>
+</table>
+<p><strong>Important:</strong> Code sets change every year. Payers have their own rules. Only a certified coder or biller should assign codes or submit claims.</p>
+
+<h2>Step-by-step: draft a superbill template (fake data only)</h2>
+<p>A superbill is not a claim. It is a document the provider completes so a biller (or patient) can build a claim.</p>
+<ol>
+<li>Open a new AI chat. Use fake provider and patient details:</li>
+</ol>
+<pre>Provider: Dr. Rivera, Example Family Clinic, 123 Example Street, Suite 4, Exampletown, IN 46000, NPI: 1234567893 (example)
+Patient: Jordan Example, DOB 05/12/1988, visit date 04/10/2026</pre>
+<ol start="2">
+<li><strong>Prompt:</strong></li>
+</ol>
+<pre>&gt; &ldquo;Draft a blank superbill template for a primary care office visit. Include fields for: provider name, clinic address, NPI (example number), patient name, DOB, visit date, place of service, CPT code (blank field), ICD-10-CM diagnosis code (blank field), charges, provider signature, and a disclaimer: &lsquo;This is an education-only template, not a completed claim. Codes must be assigned by certified staff.&rsquo; Keep it clean and printable.&rdquo;</pre>
+<ol start="3">
+<li>Review the template. Add or remove fields your clinic needs.</li>
+<li>Have your billing manager or certified coder approve it before use.</li>
+<li>Print blank copies. Never fill in real codes based on AI suggestions.</li>
+</ol>
+
+<h2>Payment posting and patient statements (administrative)</h2>
+<p>AI can help draft the <em>letter</em> that goes with a statement, not the math:</p>
+<ul>
+<li>Draft friendly past-due reminder letters</li>
+<li>Draft payment-plan offer letters</li>
+<li>Write plain-language &ldquo;what this charge means&rdquo; inserts for statements</li>
+</ul>
+<p>A staff member must verify amounts, dates, and balances before any letter goes out.</p>
+
+<h2>Compliance reminder for billing</h2>
+<p>Billing mistakes can look like fraud even when they are accidental. Never upcode (bill for a more expensive service than provided), never bill for services not performed, and always follow your clinic&rsquo;s compliance plan. When in doubt, ask your compliance officer.</p>
+
+<p><a href="docs/checklists/checklist-billing-basics.md">&rarr; Printable checklist: Billing Basics</a></p>
+
+<p class="callout"><b>Education only.</b> Not medical billing or coding advice. Confirm with a certified coder or biller. Never paste patient or claim data into AI. Created by Asdale Dynamics, LLC.</p>
+</section>
+
+</main>
+
+<footer>
+<p><span class="credit">Created by Asdale Dynamics, LLC</span> &mdash; Indiana, formed October 2026.</p>
+<p>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC. See <a href="../LICENSE">LICENSE</a>.</p>
+</footer>
+
+</body>
+</html>
